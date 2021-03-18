@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10. js53</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <script>
+        let nav = `${navigator.appName}<br>
+${navigator.appCodeName}<br>
+${navigator.appVersion}`;
+let his = `${history.length}`
+let scr = `${screen.width}
+${screen.height}
+${screen.colorDepth}`
+        console.log(nav);
+        console.log(his);
+        console.log(scr);
+        p1.innerHTML = `<p>Браузер: ${nav}</p>
+<p>Адреса: ${his}</p>
+<p>Экран: ${scr}</p>`
+    </script>
+</body>
+</html>
